@@ -1,0 +1,1002 @@
+{
+  "store": {
+    "name": "Acme Fashion",
+    "default_currency_code": "jpy",
+    "currencies": [
+      "jpy",
+      "vnd"
+    ]
+  },
+  "users": [
+    {
+      "email": "admin@build-ec.local",
+      "password": "supersecret",
+      "role": "admin"
+    }
+  ],
+  "regions": [
+    {
+      "id": "region-jp",
+      "name": "Japan",
+      "currency_code": "jpy",
+      "tax_rate": 0,
+      "payment_providers": [
+        "manual"
+      ],
+      "fulfillment_providers": [
+        "manual"
+      ],
+      "countries": [
+        "jp"
+      ]
+    },
+    {
+      "id": "region-vn",
+      "name": "Vietnam",
+      "currency_code": "vnd",
+      "tax_rate": 0,
+      "payment_providers": [
+        "manual"
+      ],
+      "fulfillment_providers": [
+        "manual"
+      ],
+      "countries": [
+        "vn"
+      ]
+    }
+  ],
+  "shipping_options": [
+    {
+      "name": "Post Standard",
+      "region_id": "region-jp",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 1000
+    },
+    {
+      "name": "Post Express",
+      "region_id": "region-jp",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 1500
+    },
+    {
+      "name": "Post Return",
+      "region_id": "region-jp",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 1000
+    },
+    {
+      "name": "I want to return it myself",
+      "region_id": "region-jp",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 0
+    },
+    {
+      "name": "Ex Standard",
+      "region_id": "region-vn",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 800
+    },
+    {
+      "name": "Ex Express",
+      "region_id": "region-vn",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "amount": 1200
+    },
+    {
+      "name": "Ex Return",
+      "region_id": "region-vn",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 800
+    },
+    {
+      "name": "I want to return it myself",
+      "region_id": "region-vn",
+      "provider_id": "manual",
+      "data": {
+        "id": "manual-fulfillment"
+      },
+      "price_type": "flat_rate",
+      "is_return": true,
+      "amount": 0
+    }
+  ],
+  "products": [
+    {
+      "title": "T-Shirt",
+      "categories": [
+        {
+          "id": "pcat_shirts"
+        }
+      ],
+      "subtitle": null,
+      "description": "Reimagine the feeling of a classic T-shirt. With our cotton T-shirts, everyday essentials no longer have to be ordinary.",
+      "handle": "t-shirt",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "http://localhost:9000/uploads/tee-black-front.png",
+        "http://localhost:9000/uploads/tee-black-back.png",
+        "http://localhost:9000/uploads/tee-white-front.png",
+        "http://localhost:9000/uploads/tee-white-back.png"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        },
+        {
+          "title": "Color",
+          "values": [
+            "Black",
+            "White"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "title": "S / Black",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "S / White",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            },
+            {
+              "value": "White"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M / Black",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M / White",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            },
+            {
+              "value": "White"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L / Black",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L / White",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            },
+            {
+              "value": "White"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL / Black",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            },
+            {
+              "value": "Black"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL / White",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2200
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            },
+            {
+              "value": "White"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Sweatshirt",
+      "categories": [
+        {
+          "id": "pcat_shirts"
+        }
+      ],
+      "subtitle": null,
+      "description": "Reimagine the feeling of a classic sweatshirt. With our cotton sweatshirt, everyday essentials no longer have to be ordinary.",
+      "handle": "sweatshirt",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "http://localhost:9000/uploads/sweatshirt-vintage-front.png",
+        "http://localhost:9000/uploads/sweatshirt-vintage-back.png"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "title": "S",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 3350
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 3350
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 3350
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 3350
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Sweatpants",
+      "categories": [
+        {
+          "id": "pcat_pants"
+        }
+      ],
+      "subtitle": null,
+      "description": "Reimagine the feeling of classic sweatpants. With our cotton sweatpants, everyday essentials no longer have to be ordinary.",
+      "handle": "sweatpants",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "http://localhost:9000/uploads/sweatpants-gray-front.png",
+        "http://localhost:9000/uploads/sweatpants-gray-back.png"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "title": "S",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 3350
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 3350
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 3350
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2950
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 3350
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Shorts",
+      "categories": [
+        {
+          "id": "pcat_merch"
+        }
+      ],
+      "subtitle": null,
+      "description": "Reimagine the feeling of classic shorts. With our cotton shorts, everyday essentials no longer have to be ordinary.",
+      "handle": "shorts",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "http://localhost:9000/uploads/shorts-vintage-front.png",
+        "http://localhost:9000/uploads/shorts-vintage-back.png"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "title": "S",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2500
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2850
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2500
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2850
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2500
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2850
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 2500
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 2850
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Hoodie",
+      "categories": [
+        {
+          "id": "pcat_merch"
+        },
+        {
+          "id": "pcat_hidden_featured"
+        }
+      ],
+      "subtitle": null,
+      "description": "Reimagine the feeling of a classic hoodie. With our cotton hoodie, everyday essentials no longer have to be ordinary.",
+      "handle": "hoodie",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "http://localhost:9000/uploads/black_hoodie_front.png",
+        "http://localhost:9000/uploads/black_hoodie_back.png"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "title": "S",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 3650
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 4150
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 3650
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 4150
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 3650
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 4150
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 3650
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 4150
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Longsleeve",
+      "categories": [
+        {
+          "id": "pcat_shirts"
+        },
+        {
+          "id": "pcat_hidden_featured"
+        }
+      ],
+      "subtitle": null,
+      "description": "Reimagine the feeling of a classic longsleeve. With our cotton longsleeve, everyday essentials no longer have to be ordinary.",
+      "handle": "longsleeve",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "http://localhost:9000/uploads/ls-black-front.png",
+        "http://localhost:9000/uploads/ls-black-back.png"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "title": "S",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 3650
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 4150
+            }
+          ],
+          "options": [
+            {
+              "value": "S"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "M",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 3650
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 4150
+            }
+          ],
+          "options": [
+            {
+              "value": "M"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "L",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 3650
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 4150
+            }
+          ],
+          "options": [
+            {
+              "value": "L"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        },
+        {
+          "title": "XL",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 3650
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 4150
+            }
+          ],
+          "options": [
+            {
+              "value": "XL"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    },
+    {
+      "title": "Coffee Mug",
+      "categories": [
+        {
+          "id": "pcat_merch"
+        },
+        {
+          "id": "pcat_hidden_featured"
+        }
+      ],
+      "subtitle": null,
+      "description": "Every programmer's best friend.",
+      "handle": "coffee-mug",
+      "is_giftcard": false,
+      "weight": 400,
+      "images": [
+        "http://localhost:9000/uploads/coffee-mug.png"
+      ],
+      "options": [
+        {
+          "title": "Size",
+          "values": [
+            "One Size"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "title": "One Size",
+          "prices": [
+            {
+              "currency_code": "jpy",
+              "amount": 1000
+            },
+            {
+              "currency_code": "vnd",
+              "amount": 1200
+            }
+          ],
+          "options": [
+            {
+              "value": "One Size"
+            }
+          ],
+          "inventory_quantity": 100,
+          "manage_inventory": true
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "pcat_pants",
+      "name": "Pants",
+      "rank": 0,
+      "category_children": [],
+      "handle": "pants"
+    },
+    {
+      "id": "pcat_shirts",
+      "name": "Shirts",
+      "rank": 0,
+      "category_children": [],
+      "handle": "shirts"
+    },
+    {
+      "id": "pcat_merch",
+      "name": "Merch",
+      "rank": 0,
+      "category_children": [],
+      "handle": "merch"
+    },
+    {
+      "id": "pcat_hidden_carousel",
+      "name": "Hidden homepage carousel",
+      "rank": 0,
+      "category_children": [],
+      "handle": "hidden-homepage-carousel"
+    },
+    {
+      "id": "pcat_hidden_featured",
+      "name": "Hidden homepage featured",
+      "rank": 0,
+      "category_children": [],
+      "handle": "hidden-homepage-featured-items"
+    }
+  ]
+}
